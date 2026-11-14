@@ -8,7 +8,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "MASS IDENTITY Neurotech Studio — Convergence",
   description: "A sim-to-real studio concept where biological signals and voice agents shape digital worlds.",
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }, { url: "/icon-512.png", type: "image/png", sizes: "512x512" }], shortcut: "/favicon.svg", apple: "/apple-touch-icon.png" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
